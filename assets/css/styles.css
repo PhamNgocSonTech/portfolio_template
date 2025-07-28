@@ -10,3 +10,79 @@ body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
+
+/* Common */
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+}
+
+/* .header-logo {
+  margin: 0 auto;
+} */
+
+.header-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-container-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #5d3bee;
+  border-radius: 50%;
+}
+.header-email img {
+  width: 24px;
+  height: 16px;
+}
+
+.header-email .email {
+  color: #080415;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 30px; /* 136.364% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+
+.nav a {
+  color: #51586a;
+  font-size: 1.8rem;
+  padding: 8px 21px;
+  line-height: normal;
+  /* background-color: coral; */
+}
