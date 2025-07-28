@@ -9,6 +9,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
+  height: 5000px;
 }
 
 /* Common */
@@ -25,18 +26,26 @@ a {
 
 /* Header */
 
+.header.fixed {
+  position: sticky;
+  top: -12px;
+}
+
 .header-body {
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
+  padding: 10px 50px;
+  /* background-color: #5d3bee; */
 }
 
 .nav ul {
   display: flex;
 }
 
-/* .header-logo {
+.header-logo {
   margin: 0 auto;
-} */
+}
 
 .header-email {
   display: flex;
@@ -65,12 +74,10 @@ a {
   font-weight: 500;
   line-height: 30px; /* 136.364% */
   text-decoration-line: underline;
-  text-decoration-style: solid;
 }
 
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .nav ul {
@@ -84,5 +91,4 @@ a {
   font-size: 1.8rem;
   padding: 8px 21px;
   line-height: normal;
-  /* background-color: coral; */
 }
