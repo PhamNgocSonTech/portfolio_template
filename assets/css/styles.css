@@ -12,7 +12,7 @@ body {
   height: 5000px;
 }
 
-/* Common */
+/* =============================Common============================= */
 
 .container {
   width: 1170px;
@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-/* Header */
+/* =============================HEADER============================= */
 
 .header.fixed {
   position: sticky;
@@ -34,13 +34,7 @@ a {
 .header__inner {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  padding: 10px 50px;
-  /* background-color: #5d3bee; */
-}
-
-.header__logo {
-  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .header__email {
@@ -50,7 +44,7 @@ a {
   gap: 10px;
 }
 
-.header__email-icon-wrapper {
+.header__container-email {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,8 +52,9 @@ a {
   height: 46px;
   border: 2px solid #5d3bee;
   border-radius: 50%;
+  background-color: #fff;
 }
-.header__email img {
+.header__email-logo {
   width: 24px;
   height: 16px;
 }
@@ -68,12 +63,12 @@ a {
   color: #080415;
   font-size: 2.2rem;
   font-weight: 500;
-  line-height: 30px; /* 136.364% */
   text-decoration-line: underline;
 }
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .navbar__list {
@@ -85,6 +80,8 @@ a {
 .navbar__link {
   color: #51586a;
   font-size: 1.8rem;
-  padding: 8px 21px;
-  line-height: normal;
+  padding: 10px 0px;
+  background-color: #5d3bee;
 }
+
+/* =============================HERO============================= */
