@@ -121,9 +121,17 @@ a {
 
 .hero__decor {
   position: absolute;
-  top: -80px;
+  /* top: -80px; */
+  bottom: 0;
+
   left: -200px;
   z-index: 1;
+}
+
+.hero__decor-content {
+  position: absolute;
+  bottom: 0;
+  left: 900px;
 }
 
 .hero__content {
