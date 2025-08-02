@@ -172,3 +172,23 @@ a {
   line-height: 1.66; /* 166.667% */
   text-decoration: underline;
 }
+
+.hero__social {
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero__social-title {
+  color: #51586a;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.87;
+}
+
+.hero__social-icons {
+  display: flex;
+  gap: 20px;
+}
