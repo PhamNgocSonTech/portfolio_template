@@ -53,7 +53,7 @@ a {
   gap: 10px;
 }
 
-.header__email-container {
+.header-container__email {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@ a {
   border-radius: 50%;
   background-color: #fff;
 }
-.header__email-logo {
+.header-img__email {
   width: 24px;
   height: 16px;
 }
@@ -191,4 +191,63 @@ a {
 .hero__social-icons {
   display: flex;
   gap: 20px;
+}
+
+/* =============================CLIENT============================= */
+
+.clients {
+  margin-top: 98px;
+}
+
+.client__inner {
+  display: flex;
+}
+
+.client__line {
+  width: 86px;
+  height: 0;
+  border: 1px solid #5d3bee;
+  margin: 22px 13px 0 0;
+}
+
+.client__title {
+  max-width: 252px;
+  color: #080415;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.19; /* 119.048% */
+  letter-spacing: -1.68px;
+}
+
+.client__list {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 1.4fr) 0.6fr;
+  align-items: center;
+  margin-left: 105px;
+}
+
+.client__item {
+  display: inline-flex;
+  gap: 13px;
+}
+
+.client__item:first-child {
+  margin-bottom: 34px;
+}
+
+.client-item__logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.client-item__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 5px;
 }
