@@ -381,7 +381,8 @@ a {
   margin-bottom: 30px;
 }
 
-.card__item {
+.project__card-item {
   background-color: #fff;
   margin-top: 30px;
+  padding: 44px 34px;
 }
