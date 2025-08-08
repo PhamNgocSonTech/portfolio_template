@@ -338,7 +338,7 @@ a {
   line-height: 1.67; /* 166.667% */
 }
 
-/* Pro  */
+/* =============================PROJECTS============================= */
 
 .projects {
   margin-top: 140px;
@@ -378,7 +378,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .project__card-item {
@@ -428,13 +428,26 @@ a {
 .project__card-img img {
   position: relative;
   max-width: 246px;
-  /* visibility: hidden; */
   z-index: 1;
 }
 
 .project__card-decor {
-  position: absolute; /* thoát khỏi flow, không đẩy cha */
+  position: absolute;
   height: 100%;
   inset: 0 0 auto auto;
   z-index: 0;
+}
+
+.project__cta {
+  background: #fff;
+  margin: 0 auto;
+}
+
+.project__cta-btn {
+  display: inline-block;
+  padding: 16px 34px;
+  color: #080415;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.67; /* 166.667% */
 }
