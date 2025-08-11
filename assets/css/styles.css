@@ -574,3 +574,87 @@ a {
   text-transform: uppercase;
   /* padding: 16px 28px; */
 }
+
+/* =============================TESTIMONAL============================= */
+.testimonal {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.testimonal__content {
+  width: 570px;
+  margin: 0 auto;
+}
+
+.testimonal__heading {
+  color: #080415;
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 1.18; /* 117.857% */
+  letter-spacing: -2.24px;
+}
+
+.testimonal__desc {
+  margin-top: 20px;
+  color: #51586a;
+  /* text-align: center; */
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+
+.testimonal__detail {
+  width: 679px;
+  margin: 0 auto;
+}
+
+.testimonal__review {
+  margin-top: 60px;
+  color: #51586a;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+
+.testimonal__people {
+  margin-top: 36px;
+}
+
+.testimonal__people-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonal__people-avt-wapper {
+  width: 40px;
+  height: 40px;
+  background: #f29764;
+  border-radius: 50%;
+  padding-top: 6px;
+  overflow: hiddens;
+}
+
+.testimonal__people-avt {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testimonal__people-name {
+  color: #080415;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.33; /* 133.333% */
+}
+
+.testimonal__people-job {
+  margin-top: 3px;
+  color: #51586a;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.81; /* 181.25% */
+}
