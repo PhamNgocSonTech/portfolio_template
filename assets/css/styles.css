@@ -658,3 +658,42 @@ a {
   font-weight: 400;
   line-height: 1.81; /* 181.25% */
 }
+
+.testimonal__people-dots {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonal__people-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background: #080415;
+  cursor: pointer;
+}
+
+.testimonal__people-dot--active {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #fff; /* khoảng trắng giữa */
+  border: 1px solid #5d3bee; /* viền ngoài */
+  border-radius: 50%;
+}
+
+.testimonal__people-dot--active::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #5d3bee;
+  border-radius: 50%;
+}
