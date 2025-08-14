@@ -754,29 +754,29 @@ a {
 }
 
 .faq__question-text {
+  display: inline-block;
   max-width: 535px;
   color: #080415;
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.25; /* 125% */
   letter-spacing: -1.28px;
-  margin-bottom: 23px;
+  margin: 60px 0 33px; /* khoảng cách khi đóng */
+  transition: margin 0.28s ease; /* mượt khi thay đổi */
 }
 
 .faq__button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 50px;
   position: relative;
   width: 50px;
   height: 50px;
-  /* border: 2px solid rgba(93, 59, 238, 0.2); */
   border: 2px solid rgba(22, 26, 28, 0.2);
-
   border-radius: 50%;
   cursor: pointer;
   background: transparent;
-  /* padding: 0; */
 }
 
 .faq__icon-plus,
@@ -788,13 +788,21 @@ a {
   display: none;
 }
 
+/* answer */
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: max-height 0.32s ease, margin 0.32s ease;
+}
+
 .faq__answer-text {
   max-width: 487px;
   color: #51586a;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
-  margin-bottom: 21px;
+  /* margin: 23px 0 21px; */
 }
 
 /* open button plus */
@@ -810,13 +818,12 @@ a {
   display: block;
 }
 
-/* answer */
-.faq__answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+.faq__item input:checked ~ .faq__answer {
+  max-height: 500px;
+  margin: 23px 0 21px;
 }
 
 .faq__item input:checked ~ .faq__answer {
-  max-height: 200px;
+  max-height: 200px; /* đủ lớn cho nội dung thường; tăng nếu cần */
+  margin: 23px 0 21px; /* khoảng cách giữa question và answer khi mở */
 }
