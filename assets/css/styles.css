@@ -16,6 +16,10 @@ body {
 
 /* =============================Common============================= */
 
+button {
+  pointer-events: none;
+}
+
 .main__container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -582,6 +586,7 @@ a {
   margin-top: 150px;
   text-align: center;
   position: relative;
+  padding-bottom: 75px;
 }
 
 .feedback__content {
@@ -671,8 +676,8 @@ a {
 }
 
 .feedback__people-dot {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   opacity: 0.2;
   background: #080415;
@@ -680,7 +685,7 @@ a {
 }
 
 .feedback__people-dot--active {
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
   width: 20px;
   height: 20px;
@@ -716,3 +721,102 @@ a {
 }
 
 /* =============================FAQ============================= */
+.faq {
+  margin-top: 95px;
+}
+
+.faq__heading {
+  max-width: 575px;
+  color: #080415;
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 1.18; /* 117.857% */
+  letter-spacing: -2.24px;
+}
+
+.faq__group {
+  margin-top: 80px;
+}
+
+.faq__item {
+  border-bottom: 1px solid pink;
+}
+
+.faq__item input[type="checkbox"] {
+  display: none;
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq__question-text {
+  max-width: 535px;
+  color: #080415;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25; /* 125% */
+  letter-spacing: -1.28px;
+  margin-bottom: 23px;
+}
+
+.faq__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid rgba(93, 59, 238, 0.2); */
+  border: 2px solid rgba(22, 26, 28, 0.2);
+
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  /* padding: 0; */
+}
+
+.faq__icon-plus,
+.faq__icon-minus {
+  display: inline-block;
+}
+
+.faq__icon-minus {
+  display: none;
+}
+
+.faq__answer-text {
+  max-width: 487px;
+  color: #51586a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  margin-bottom: 21px;
+}
+
+/* open button plus */
+.faq__item input:checked ~ .faq__question .faq__button {
+  border-color: rgba(93, 59, 238, 0.2);
+}
+
+.faq__item input:checked ~ .faq__question .faq__icon-plus {
+  display: none;
+}
+
+.faq__item input:checked ~ .faq__question .faq__icon-minus {
+  display: block;
+}
+
+/* answer */
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq__item input:checked ~ .faq__answer {
+  max-height: 200px;
+}
