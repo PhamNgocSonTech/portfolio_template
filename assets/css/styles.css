@@ -4,6 +4,8 @@
 
 html {
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -579,6 +581,7 @@ a {
 .testimonal {
   margin-top: 150px;
   text-align: center;
+  position: relative;
 }
 
 .testimonal__content {
@@ -697,3 +700,19 @@ a {
   background: #5d3bee;
   border-radius: 50%;
 }
+
+.testimonal__decor-left,
+.testimonal__decor-right {
+  position: absolute;
+  bottom: 0;
+}
+
+.testimonal__decor-left {
+  left: 0;
+}
+
+.testimonal__decor-right {
+  right: 0;
+}
+
+/* =============================FAQ============================= */
