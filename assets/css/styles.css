@@ -892,3 +892,20 @@ a {
   object-fit: cover;
   flex-shrink: 0;
 }
+
+/* =============================BOOKING============================= */
+
+.booking {
+  margin-top: 140px;
+}
+
+.booking__content {
+  width: 574px;
+  height: 352px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking__icon {
+  /* margin: 0 auto; */
+}
