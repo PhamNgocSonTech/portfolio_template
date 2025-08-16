@@ -45,7 +45,7 @@ a {
   position: sticky;
   top: -12px;
   background-color: #fbfaff;
-  z-index: 4;
+  z-index: 1000;
 }
 
 .header__inner {
@@ -969,4 +969,32 @@ a {
 /* =============================FOOTER============================= */
 .footer {
   margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.footer__bottom {
+  padding-top: 18px;
+  border-top: 1px solid rgba(12, 7, 32, 0.2);
+}
+
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 36px;
+}
+
+.footer__copyright,
+.footer__link {
+  color: #525771;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  opacity: 0.6;
 }
