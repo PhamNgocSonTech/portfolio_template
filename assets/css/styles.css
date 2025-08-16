@@ -899,6 +899,7 @@ a {
   margin-top: 140px;
   padding: 68px 0 68px;
   position: relative;
+  background: #fbfaff;
 }
 
 .booking__content {
@@ -964,4 +965,8 @@ a {
   right: 0;
   top: 0;
   z-index: 1;
+}
+/* =============================FOOTER============================= */
+.footer {
+  margin-top: 50px;
 }
