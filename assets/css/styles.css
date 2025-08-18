@@ -90,6 +90,10 @@ a {
   text-decoration-line: underline;
 }
 
+.header__email-link:hover {
+  color: #5d3bee;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -586,6 +590,10 @@ a {
   cursor: pointer;
 }
 
+.about-me__play:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .about-me__intro {
   background-color: #fff;
   position: absolute;
@@ -601,6 +609,15 @@ a {
   line-height: 1.67; /* 166.667% */
   text-transform: uppercase;
   /* padding: 16px 28px; */
+}
+
+.about-me__intro:hover {
+  background-color: #5d3bee;
+  opacity: 1;
+}
+
+.about-me__intro.btn:hover .about-me__intro-btn {
+  color: #fff;
 }
 
 /* =============================Feedback============================= */
@@ -900,6 +917,10 @@ a {
   text-decoration-style: solid;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
+}
+
+.atmosphere__email-link:hover {
+  color: #080415;
 }
 
 .atmosphere__media {
