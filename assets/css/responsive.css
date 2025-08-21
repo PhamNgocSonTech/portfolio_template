@@ -87,6 +87,7 @@
     z-index: 5;
     transform: translateX(100%);
     transition: 0.4s ease;
+    padding: 60px;
   }
 
   .header__menu-checkbox:checked ~ .header__overlay {
@@ -97,6 +98,16 @@
   .header__menu-checkbox:checked ~ .header__menu-drawer {
     transform: translateX(0);
   }
+
+  .header__menu-icon ul {
+    margin-top: 30px;
+  }
+
+  .header__menu-icon ul a {
+    display: block;
+    padding: 18px 0;
+    font-weight: 500;
+  }
 }
 
 /* Table */
@@ -105,4 +116,7 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+  .header__menu-drawer {
+    padding: 40px;
+  }
 }
