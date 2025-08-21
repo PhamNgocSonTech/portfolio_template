@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header fixed">
         <div class="main__container">
             <div class="header__inner">
@@ -59,8 +59,15 @@
                 <!-- Navbar -->
                 <nav class="navbar">
                     <!-- Header Menu Toggle Tablet/Mobile  -->
-                    <label for="" class="navbar__menu">
-                        <img src="./assets/img//toggle-menu.svg" alt="" class="navbar__menu-icon">
+                    <label for="header__menu-checkbox" class="navbar__menu">
+                        <!-- <img src="./assets/img//toggle-menu.svg" alt="" class="navbar__menu-icon"> -->
+                        <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 1H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
                     </label>
                     <ul class="navbar__list">
                         <li class="navbar__item">
@@ -79,6 +86,15 @@
                 </nav>
             </div>
         </div>
+    </header>
+
+    <!-- Tablet/Mobile Header -->
+    <header class="header header--mobile">
+        <input class="header__menu-checkbox" type="checkbox" name="" id="header__menu-checkbox" hidden>
+        <!-- Overlay     -->
+        <label for="header__menu-checkbox" class="header__overlay"></label>
+        <!-- Menu Content -->
+        <div class="header__menu-drawer"></div>
     </header>
     <!-- End Header -->
 
@@ -560,7 +576,15 @@
                     <nav class="navbar">
                         <!-- Footer Menu Toggle Tablet/Mobile  -->
                         <label for="" class="navbar__menu">
-                            <img src="./assets/img//toggle-menu.svg" alt="" class="navbar__menu-icon">
+                            <!-- <img src="./assets/img//toggle-menu.svg" alt="" class="navbar__menu-icon"> -->
+                            <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M1 1H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
                         </label>
                         <ul class="navbar__list">
                             <li class="navbar__item">
