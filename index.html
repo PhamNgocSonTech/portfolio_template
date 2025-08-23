@@ -69,7 +69,8 @@
                         </svg>
 
                     </label>
-                    <ul class="navbar__list">
+                    <!-- Navigation -->
+                    <ul id="pc-nav" class="navbar__list">
                         <li class="navbar__item">
                             <a href="#!" class="navbar__link">Projects</a>
                         </li>
@@ -100,20 +101,15 @@
                 <a href="#!" class="header__menu-icon-link">
                     <img src="./assets/img/logo.svg" alt="" class="header__menu-icon-img">
                 </a>
-                <ul class="">
-                    <li class="navbar__item">
-                        <a href="#!" class="navbar__link">Projects</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#!" class="navbar__link">Journey</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#!" class="navbar__link">Service</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#!" class="navbar__link">Contact</a>
-                    </li>
+                <ul id="mobile-nav">
+
                 </ul>
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+                    // Copy from PC Nav to Mobile Nav
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
             </div>
         </div>
     </header>

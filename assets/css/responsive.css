@@ -60,7 +60,6 @@
 
   .navbar__menu {
     display: flex;
-    /* order: 3; */
     justify-content: center;
     align-items: center;
     width: 46px;
@@ -112,6 +111,30 @@
 
 /* Table */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .header__inner {
+    display: flex;
+    justify-content: center;
+  }
+  .header__email-link {
+    display: block;
+  }
+  .header__icon {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .header__email {
+    display: flex;
+    align-items: center;
+    /* gap: 0px; */
+    order: 1;
+    margin-right: auto;
+  }
+
+  .navbar {
+    order: 3;
+    margin-left: auto;
+  }
 }
 
 /* Mobile */
