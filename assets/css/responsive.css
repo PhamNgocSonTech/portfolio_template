@@ -107,6 +107,45 @@
     padding: 18px 0;
     font-weight: 500;
   }
+
+  .hero__decor-second {
+    display: none;
+  }
+
+  /* .hero__social {
+    justify-content: center;
+    margin-top: 80;
+  } */
+
+  .clients {
+    margin-top: 200px;
+  }
+
+  .client__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .client__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 40px;
+    margin-left: auto;
+    margin-top: 40px;
+  }
+
+  .client__item {
+    justify-content: center;
+  }
+
+  .project__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .atmosphere__media {
+    flex-direction: column;
+    row-gap: 50px;
+  }
 }
 
 /* Table */
