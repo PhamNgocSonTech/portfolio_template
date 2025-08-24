@@ -21,6 +21,10 @@
   .navbar__menu {
     display: none;
   }
+
+  .header__menu-drawer {
+    display: none;
+  }
 }
 
 /* Tablet & Mobile */
@@ -145,6 +149,19 @@
   .atmosphere__media {
     flex-direction: column;
     row-gap: 50px;
+  }
+
+  .booking__content {
+    width: 100%;
+  }
+
+  .booking__img-right,
+  .booking__img-left {
+    display: none;
+  }
+
+  .booking__img-center {
+    width: 100%;
   }
 }
 
