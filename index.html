@@ -31,44 +31,85 @@
     <!-- Embed fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header fixed">
         <div class="main__container">
             <div class="header__inner">
+                <!-- Email -->
                 <div class="header__email">
                     <div class="header-container__email">
                         <img src="./assets/img/email-logo.svg" alt="" class="header-img__email">
                     </div>
                     <a href="#!" class="header__email-link">hi@arif.interactive</a>
                 </div>
+                <!-- Logo -->
                 <div class="header__icon">
                     <img src="./assets/img/logo.svg" alt="" class="header-img__icon">
                 </div>
+                <!-- Navbar -->
                 <nav class="navbar">
-                    <ul class="navbar__list">
+                    <!-- Header Menu Toggle Tablet/Mobile  -->
+                    <label for="header__menu-checkbox" class="navbar__menu">
+                        <!-- <img src="./assets/img//toggle-menu.svg" alt="" class="navbar__menu-icon"> -->
+                        <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 1H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </label>
+                    <!-- Navigation -->
+                    <ul id="pc-nav" class="navbar__list">
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Projects</a>
+                            <a href="#projects" class="navbar__link">Projects</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Journey</a>
+                            <a href="#journey" class="navbar__link">Journey</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Service</a>
+                            <a href="#service" class="navbar__link">Service</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Contact</a>
+                            <a href="#contact" class="navbar__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tablet/Mobile Header -->
+    <header class="header header--mobile">
+        <input class="header__menu-checkbox" type="checkbox" name="" id="header__menu-checkbox" hidden>
+        <!-- Overlay     -->
+        <label for="header__menu-checkbox" class="header__overlay"></label>
+        <!-- Menu Content -->
+        <div class="header__menu-drawer">
+            <!-- Logo -->
+            <div class="header__menu-icon">
+                <a href="#!" class="header__menu-icon-link">
+                    <img src="./assets/img/logo.svg" alt="" class="header__menu-icon-img">
+                </a>
+                <ul id="mobile-nav">
+
+                </ul>
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+                    // Copy from PC Nav to Mobile Nav
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
             </div>
         </div>
     </header>
@@ -239,7 +280,7 @@
         <!-- End Special -->
 
         <!-- Projects -->
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="main__container">
                 <div class="project__content">
                     <h2 class="project__heading heading">Take a look at <br> my recent projects</h2>
@@ -320,7 +361,7 @@
         <!-- End Projects -->
 
         <!-- About Me -->
-        <section class="about-me">
+        <section id="journey" class="about-me">
             <div class="main__container">
                 <div class="about-me__content">
                     <span class="about-me__title">Hey,,,,It’s Arif
@@ -487,7 +528,7 @@
 
 
         <!-- Atmosphere -->
-        <section class="atmosphere">
+        <section id="service" class="atmosphere">
             <div class="main__container">
                 <div class="atmosphere__content">
                     <h2 class="atmosphere__heading heading">My atmosphere</h2>
@@ -511,7 +552,7 @@
         <!-- End Atmosphere -->
 
         <!-- Booking -->
-        <section class="booking">
+        <section id="contact" class="booking">
             <div class="main__container">
                 <div class="booking__content">
                     <div class="booking__icon">
@@ -550,18 +591,30 @@
                         <img src="./assets/img/logo.svg" alt="" class="header-img__icon">
                     </div>
                     <nav class="navbar">
+                        <!-- Footer Menu Toggle Tablet/Mobile  -->
+                        <label for="" class="navbar__menu">
+                            <!-- <img src="./assets/img//toggle-menu.svg" alt="" class="navbar__menu-icon"> -->
+                            <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M1 1H16" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </label>
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Projects</a>
+                                <a href="#projects" class="navbar__link">Projects</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Journey</a>
+                                <a href="#journey" class="navbar__link">Journey</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Service</a>
+                                <a href="#service" class="navbar__link">Service</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Contact</a>
+                                <a href="#contact" class="navbar__link">Contact</a>
                             </li>
                         </ul>
                     </nav>
