@@ -163,6 +163,23 @@
   .booking__img-center {
     width: 100%;
   }
+
+  .special__content {
+    margin-bottom: 20px;
+  }
+
+  .special__item-title {
+    font-size: 3rem;
+  }
+
+  .special__item-desc {
+    font-size: 1.5rem;
+  }
+
+  .footer__copyright,
+  .footer__link {
+    font-size: 1.5rem;
+  }
 }
 
 /* Table */
