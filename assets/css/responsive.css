@@ -274,4 +274,64 @@
   .header__menu-drawer {
     padding: 40px;
   }
+
+  .header {
+    /* border-width: 377px; */
+    border-bottom: 1px solid #d6d3e2;
+  }
+
+  .hero__inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero__heading {
+    font-size: 4.2rem;
+  }
+
+  .hero__desc {
+    font-size: 1.6rem;
+  }
+  .client__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .special__desc {
+    width: 350px;
+  }
+  .special__list {
+    flex-direction: column;
+  }
+  .project__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project__heading {
+    font-size: 3.6rem;
+  }
+  .project__desc {
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+
+  /* .project__card {
+    width: 350px;
+  } */
+
+  .project__card-item {
+    width: 350px;
+  }
+  .project__card-wrapper {
+    padding: 20px 15px;
+  }
+
+  .project__card-content {
+    width: 176px;
+    margin-right: 20px;
+  }
+  .project__card-img img {
+    width: 112px;
+  }
+  .feedback__content,
+  .feedback__detail {
+    width: 100%;
+  }
 }
