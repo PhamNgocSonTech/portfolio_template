@@ -201,12 +201,40 @@
     align-items: center;
     /* gap: 0px; */
     order: 1;
-    margin-right: auto;
+    /* margin-right: auto; */
+    margin: 0;
   }
 
   .navbar {
     order: 3;
     margin-left: auto;
+  }
+}
+
+/* Large Tablet (iPad Pro, Surface, etc.) */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .hero__inner {
+    gap: 50px;
+  }
+  .hero__image-wrap {
+    height: auto;
+  }
+
+  .hero__decor-second {
+    display: none;
+  }
+
+  .client__list {
+    margin-left: 40px;
+  }
+
+  .project__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .atmosphere__media {
+    flex-direction: column;
+    row-gap: 60px;
   }
 }
 
