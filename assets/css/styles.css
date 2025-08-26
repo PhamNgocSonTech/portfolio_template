@@ -157,7 +157,7 @@ a {
 .hero__image-wrap {
   position: relative;
   width: 514px;
-  height: 705px;
+  height: 100%;
   /* background-color: var(--primary-color); */
 }
 
