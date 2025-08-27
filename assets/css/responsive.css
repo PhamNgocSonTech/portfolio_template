@@ -284,29 +284,52 @@
     flex-direction: column-reverse;
   }
 
+  .hero__content {
+    width: 100%;
+  }
+
   .hero__heading {
     font-size: 4.2rem;
+    /* max-width: 260px; */
   }
 
   .hero__desc {
     font-size: 1.6rem;
+    /* max-width: 318px; */
   }
+  .hero__social {
+    margin-top: 25px;
+  }
+
+  .hero__image-wrap {
+    width: 100%;
+  }
+
+  .hero__decor-first {
+    display: none;
+  }
+
   .client__list {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .special__desc {
     width: 350px;
   }
+
   .special__list {
     flex-direction: column;
   }
+
   .project__content {
     flex-direction: column;
     text-align: center;
   }
+
   .project__heading {
     font-size: 3.6rem;
   }
+
   .project__desc {
     font-size: 1.6rem;
     margin-top: 20px;
