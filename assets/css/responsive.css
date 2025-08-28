@@ -29,6 +29,14 @@
   .header__menu-drawer {
     display: none;
   }
+
+  .special__dots {
+    display: none;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
 }
 
 /* Tablet & Mobile */
@@ -251,6 +259,14 @@
   .project__desc {
     width: 350px;
   }
+
+  .special__dots {
+    display: none;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
 }
 
 /* Large Tablet (iPad Pro, Surface, etc.) */
@@ -355,12 +371,37 @@
     margin-top: 36px;
   }
 
+  /* Special */
+
   .special__desc {
     width: 350px;
   }
 
   .special__list {
-    flex-direction: column;
+    /* width: 300%;
+    transition: transform 0.5s ease; */
+    overflow: hidden;
+  }
+
+  .special__item {
+    flex-shrink: 0;
+    width: 100%;
+    transform: translate(-0%);
+    transition: transform 0.3s ease;
+  }
+
+  .special__radio-control {
+    text-align: center;
+    margin-top: 32px;
+    gap: 15px;
+  }
+
+  .special__dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
 
   .project__content {
