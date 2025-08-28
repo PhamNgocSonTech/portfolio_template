@@ -18,6 +18,10 @@
     justify-self: end;
   } */
 
+  .show-on-mobile {
+    display: none;
+  }
+
   .navbar__menu {
     display: none;
   }
@@ -240,6 +244,10 @@
     margin-top: 80px;
   }
 
+  .show-on-mobile {
+    display: none;
+  }
+
   .project__desc {
     width: 350px;
   }
@@ -303,10 +311,36 @@
 
   .hero__image-wrap {
     width: 100%;
+    /* max-width: 259px; */
+    text-align: center;
   }
 
-  .hero__decor-first {
+  .hero__image-wrap {
+    text-align: center;
+    /* height: 100%; */
+    overflow: hidden;
+  }
+
+  .hero__portrait {
+    display: inline-block;
+    width: 100%;
+    max-width: 259px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero__decor-first,
+  .hero__decor-second {
     display: none;
+  }
+
+  .hero__decor-center {
+    max-width: 543px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   .client__list {
