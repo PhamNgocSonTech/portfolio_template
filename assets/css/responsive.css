@@ -345,6 +345,14 @@
 
   .client__list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .client__item {
+    gap: 12px;
+  }
+
+  .client__group:nth-child(n + 3) {
+    margin-top: 36px;
   }
 
   .special__desc {
