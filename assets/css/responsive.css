@@ -452,6 +452,8 @@
     border-radius: 50%;
   }
 
+  /* Projects */
+
   .project__content {
     flex-direction: column;
     text-align: center;
@@ -466,24 +468,103 @@
     margin-top: 20px;
   }
 
-  /* .project__card {
-    width: 350px;
-  } */
-
-  .project__card-item {
-    width: 350px;
+  .project__card {
+    /* width: 350px; */
+    margin-bottom: 50px;
   }
+
+  /* .project__card-item {
+    width: 100%;
+  } */
   .project__card-wrapper {
     padding: 20px 15px;
+    gap: 22px;
   }
 
   .project__card-content {
-    width: 176px;
-    margin-right: 20px;
+    max-width: 176px;
+    /* width: 100%; */
+    /* margin-right: 22px; */
   }
+
+  .project__card-title {
+    font-size: 2.4rem;
+  }
+
+  .project__card-desc {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .project__card-link {
+    font-size: 1.6rem;
+  }
+
   .project__card-img img {
     width: 112px;
   }
+
+  /* About Me */
+  .about-me {
+    margin-top: 120px;
+  }
+
+  .about-me__title {
+    font-size: 2rem;
+  }
+
+  .about-me__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .about-me__heading {
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+  }
+
+  .about-me__desc {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+  }
+
+  .about-me__statistic {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .about-me__statistic-detail {
+    font-size: 1.6rem;
+  }
+
+  .about-me__statistic-detail strong {
+    font-size: 3rem;
+  }
+  /* Đảo thứ tự theo thiết kế */
+  .about-me__statistic-detail:nth-child(1) {
+    order: 2;
+  }
+  .about-me__statistic-detail:nth-child(2) {
+    order: 1;
+  }
+  .about-me__statistic-detail:nth-child(3) {
+    order: 3;
+  }
+
+  .about-me__thumb {
+    max-width: 350px;
+    height: 276px;
+  }
+
+  .about-me__play {
+    width: 77px;
+    height: 77px;
+  }
+  .about-me__intro btn {
+    width: 118px;
+    height: 44px;
+  }
+
   .feedback__content,
   .feedback__detail {
     width: 100%;
