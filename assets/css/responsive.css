@@ -560,9 +560,33 @@
     width: 77px;
     height: 77px;
   }
-  .about-me__intro btn {
+
+  .about-me__intro.btn {
     width: 118px;
     height: 44px;
+  }
+
+  .about-me__intro-btn {
+    font-size: 1.2rem;
+  }
+
+  /* Feedback */
+  .feedback__heading {
+    font-size: 3.6rem;
+  }
+
+  .feedback__desc {
+    font-size: 1.6rem;
+  }
+
+  .feedback__review {
+    margin-top: 40px;
+    font-size: 1.8rem;
+  }
+
+  .feedback__decor-right,
+  .feedback__decor-left {
+    max-width: 98px;
   }
 
   .feedback__content,

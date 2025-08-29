@@ -617,10 +617,12 @@ a {
 .about-me__media {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 .about-me__thumb {
-  max-width: 100%;
+  max-width: 1170px;
+  height: 628px;
 }
 
 .about-me__play {
@@ -833,6 +835,10 @@ a {
 
 .faq__item:has(input:checked) {
   border-color: var(--primary-color);
+}
+
+.faq__item:has(input:checked) .faq__question-text {
+  color: var(--primary-color);
 }
 
 .faq__item input[type="checkbox"] {
