@@ -593,4 +593,138 @@
   .feedback__detail {
     width: 100%;
   }
+
+  /* FAQ */
+  .faq {
+    margin-top: 120px;
+  }
+
+  .faq__heading {
+    font-size: 3.6rem;
+  }
+
+  .faq__group {
+    margin-top: 42px;
+  }
+
+  .faq__question-text {
+    font-size: 2.4rem;
+    margin: 40px 0 15px;
+    max-width: 264px;
+  }
+
+  .faq__answer-text {
+    font-size: 1.6rem;
+    margin: 15px 0 18px;
+  }
+
+  .faq__item input:checked ~ .faq__answer {
+    margin: -15px 0 21px;
+  }
+
+  .faq__button {
+    width: 33px;
+    height: 33px;
+    flex: 0 0 33px;
+  }
+
+  .faq__button img {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* Atmosphere */
+  .atmosphere {
+    margin-top: 120px;
+  }
+
+  .atmosphere__heading {
+    font-size: 3.6rem;
+  }
+
+  .atmosphere__desc {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .atmosphere__email-link {
+    font-size: 2rem;
+  }
+
+  .atmosphere__email {
+    margin-bottom: 60px;
+  }
+
+  .atmosphere__media {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .atmosphere__indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  .atmosphere__dot {
+    /* display: inline-block; */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #080415;
+    opacity: 0.2;
+  }
+
+  .atmosphere__dot--active {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--second-color); /* khoảng trắng giữa */
+    border: 1px solid var(--primary-color); /* viền ngoài */
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  .atmosphere__dot--active::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-color);
+  }
+  /* Booking */
+  .booking {
+    margin-top: 120px;
+  }
+  .booking__icon-img {
+    width: 48px;
+    height: 48px;
+  }
+  .booking__heading {
+    font-size: 3.6rem;
+    max-width: 225px;
+    margin: 0 auto;
+  }
+  .booking__desc {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .booking__cta.btn {
+    width: 147px;
+  }
+  .booking__cta-btn {
+    font-size: 1.6rem;
+  }
+  .booking__img-center {
+    /* min-width: 567px; */
+    /* height: 454px; */
+    overflow: hidden;
+  }
 }
