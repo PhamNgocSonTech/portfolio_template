@@ -189,7 +189,7 @@ a {
 .hero__decor-second {
   position: absolute;
   bottom: 0;
-  left: 900px;
+  left: 950px;
 }
 
 .hero__content {
@@ -248,9 +248,26 @@ a {
 
 .hero__social-icons {
   display: flex;
+  align-items: center;
   gap: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
+.hero__social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(8, 4, 21, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.hero__social-icon:hover {
+  background-color: #d9e1e8;
+}
 /* =============================CLIENT============================= */
 
 .clients {
@@ -397,10 +414,11 @@ a {
   height: 306px;
   padding: 33px 43px;
   background-color: var(--second-color);
+  transition: background-color 0.3s ease;
 }
 
 .special__item:hover {
-  background: #d9e1e8;
+  background-color: #d9e1e8;
 }
 
 .special__icon-wrapper {
