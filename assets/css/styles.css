@@ -15,11 +15,13 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* -webkit-tap-highlight-color: transparent; */
 }
 
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 
 /* =============================Common============================= */
@@ -74,13 +76,15 @@ a {
   padding-top: 10px;
 } */
 
-.header__inner {
+.header__inner,
+.footer__inner {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
 
-.header__email {
+.header__email,
+.footer__email {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +92,8 @@ a {
   gap: 10px;
 }
 
-.header-container__email {
+.header-container__email,
+.footer-container__email {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,19 +104,22 @@ a {
   background-color: var(--second-color);
 }
 
-.header-img__email {
+.header-img__email,
+.footer-img__email {
   width: 24px;
   height: 16px;
 }
 
-.header__email-link {
+.header__email-link,
+.footer__email-link {
   color: var(--heading-color);
   font-size: 2.2rem;
   font-weight: 500;
   text-decoration-line: underline;
 }
 
-.header__email-link:hover {
+.header__email-link:hover,
+.footer__email-link:hover {
   color: var(--primary-color);
 }
 
@@ -157,7 +165,7 @@ a {
 .hero__image-wrap {
   position: relative;
   width: 514px;
-  height: 705px;
+  height: 100%;
   /* background-color: var(--primary-color); */
 }
 
@@ -181,7 +189,7 @@ a {
 .hero__decor-second {
   position: absolute;
   bottom: 0;
-  left: 900px;
+  left: 950px;
 }
 
 .hero__content {
@@ -240,9 +248,26 @@ a {
 
 .hero__social-icons {
   display: flex;
+  align-items: center;
   gap: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
+.hero__social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(8, 4, 21, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.hero__social-icon:hover {
+  background-color: #d9e1e8;
+}
 /* =============================CLIENT============================= */
 
 .clients {
@@ -281,16 +306,27 @@ a {
   background-color: var(--primary-color);
 } */
 
+.client__group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: flex-start; /* căn trái trong cột — giống mockup */
+}
+
 .client__list {
   display: grid;
-  grid-template-columns: 1fr repeat(2, 1.4fr) 0.6fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 48px;
+
   align-items: center;
   margin-left: 105px;
 }
 
 .client__item {
   display: inline-flex;
-  gap: 13px;
+  align-items: center;
+  gap: 10px;
 }
 
 .client__item:first-child {
@@ -298,10 +334,10 @@ a {
 }
 
 .client-item__logo {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  object-fit: contain;
+  /* width: 26px;
+  height: 26px; */
+  /* border-radius: 50%; */
+  /* object-fit: contain; */
 }
 
 .client-item__logo-wrapper {
@@ -311,7 +347,32 @@ a {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  padding: 5px;
+  /* background-color: transparent; */
+  flex-shrink: 0;
+}
+
+.client--upwork {
+  background-color: rgba(20, 168, 0, 1);
+}
+
+.client--wb {
+  background-color: rgba(251, 250, 255, 1);
+}
+
+.client--cloud {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.client--mail {
+  background-color: rgba(254, 225, 1, 1);
+}
+
+.client--woo {
+  background-color: rgba(127, 84, 179, 1);
+}
+
+.client--adobe {
+  background-color: rgba(255, 0, 0, 1);
 }
 
 /* =============================SPECIAL============================= */
@@ -353,10 +414,11 @@ a {
   height: 306px;
   padding: 33px 43px;
   background-color: var(--second-color);
+  transition: background-color 0.3s ease;
 }
 
 .special__item:hover {
-  background: #d9e1e8;
+  background-color: #d9e1e8;
 }
 
 .special__icon-wrapper {
@@ -579,10 +641,12 @@ a {
 .about-me__media {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 .about-me__thumb {
   max-width: 100%;
+  /* height: 628px; */
 }
 
 .about-me__play {
@@ -795,6 +859,10 @@ a {
 
 .faq__item:has(input:checked) {
   border-color: var(--primary-color);
+}
+
+.faq__item:has(input:checked) .faq__question-text {
+  color: var(--primary-color);
 }
 
 .faq__item input[type="checkbox"] {
