@@ -49,7 +49,7 @@ a {
   background: var(--primary-color);
   cursor: pointer;
   /* pointer-events: auto; */
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 
 .btn:hover {
@@ -229,6 +229,8 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 1.66; /* 166.667% */
+}
+.hero__cta-link:hover {
   text-decoration: underline;
 }
 
@@ -532,7 +534,9 @@ a {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.67; /* 166.667% */
-  text-decoration-line: underline;
+}
+.project__card-link:hover {
+  text-decoration: underline;
 }
 
 .project__card-img img {
@@ -543,7 +547,6 @@ a {
 
 .project__card-decor {
   position: absolute;
-  height: 100%;
   inset: 0 0 auto auto;
   z-index: 0;
 }
@@ -666,6 +669,7 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   cursor: pointer;
+  transition: box-shadow 0.5s ease;
 }
 
 .about-me__play:hover {

@@ -41,6 +41,8 @@
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -124,21 +126,22 @@
         <div class="main__container">
             <div class="hero__inner">
                 <div class="hero__image-wrap">
-                    <img src="./assets/img/hero-img.png" alt="" class="hero__portrait wow animate__backInLeft">
+                    <img src="./assets/img/hero-img.png" alt="" class="hero__portrait">
                     <!-- Decorators -->
-                    <img src="./assets/img/decor-01.svg" alt="" class="hero__decor-first wow animate__backInDown">
+                    <img src="./assets/img/decor-01.svg" alt="" class="hero__decor-first">
                     <img src="./assets/img/decor-02.svg" alt="" class="hero__decor-second">
                     <img src="./assets/img/decor-01.svg" alt="" class="hero__decor-center show-on-mobile">
 
                 </div>
                 <div class="hero__content">
-                    <h1 class="hero__heading heading">
+                    <h1 class="hero__heading heading wow animate__backInRight">
                         An Interactive Designer
                     </h1>
                     <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
                         tincidunt ut elementum turpis.</p>
                     <div class="hero__row">
-                        <a href="#!" class="hero__cta-btn btn wow animate__pulse animate__infinite">Book a Call</a>
+                        <a href="#!" class="hero__cta-btn btn wow animate__pulse animate__infinite">Book a
+                            Call</a>
                         <a href="#!" class="hero__cta-link">My Works</a>
                     </div>
                     <div class="hero__social">
@@ -439,7 +442,8 @@
                 <div class="about-me__media">
                     <img src="./assets/img/about-me-thumb.png" alt="" class="about-me__thumb hide-on-mobile">
                     <div class="about-me__play">
-                        <img class="about-me__play-btn" src="./assets/img/play-icon.svg" alt="">
+                        <img class="about-me__play-btn wow animate__headShake animate__infinite"
+                            src="./assets/img/play-icon.svg" alt="">
                     </div>
                     <div class="about-me__intro btn">
                         <a href="#!" class="about-me__intro-btn">Intro Video</a>
@@ -622,7 +626,7 @@
                     <p class="booking__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
                         tincidunt ut elementum turpis.
                     </p>
-                    <div class="booking__cta btn">
+                    <div class="booking__cta btn wow animate__pulse animate__infinite">
                         <a href="#!" class="booking__cta-btn">Booking a Call</a>
                     </div>
 
@@ -705,6 +709,18 @@
             }
         ).init();
     </script>
+    <!-- AOS -->
+    <!-- <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            useClassNames: true,
+            initClassName: null,
+            animatedClassName: 'animate__animated',
+            mirror: true,
+            once: false,
+        });
+    </script> -->
 </body>
 
 </html>
