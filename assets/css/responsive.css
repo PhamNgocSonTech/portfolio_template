@@ -854,3 +854,32 @@
     font-size: 1.8rem;
   }
 }
+
+/* Extra Small Mobile */
+
+@media (max-width: 575px) {
+  .navbar--footer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .navbar--footer .navbar__list {
+    margin-left: 10px;
+  }
+
+  .footer__links {
+    margin-left: 20px;
+  }
+
+  .footer__separator {
+    margin-right: 0;
+  }
+
+  .footer__copyright {
+    margin-top: 6px;
+    font-size: 1.4rem;
+  }
+  .projects {
+    max-width: 100%;
+  }
+}
