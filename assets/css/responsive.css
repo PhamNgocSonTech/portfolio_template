@@ -869,6 +869,11 @@
 
   .footer__links {
     margin-left: 20px;
+    width: 100%;
+    border-bottom-width: 100%;
+  }
+  .footer__link {
+    font-size: 1.3rem;
   }
 
   .footer__separator {
