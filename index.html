@@ -167,8 +167,6 @@
                                         fill="#EA4C89" />
                                 </svg>
                             </a>
-
-
                             <a href="#!" class="hero__social-icon">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -183,10 +181,6 @@
                                         fill="#515BD4" />
                                 </svg>
                             </a>
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -587,9 +581,7 @@
                 </div>
             </div>
         </section>
-
         <!-- End FAQ -->
-
 
         <!-- Atmosphere -->
         <section id="service" class="atmosphere">
@@ -606,14 +598,20 @@
                 </div>
 
                 <div class="atmosphere__media">
+                    <!-- Radio Control -->
+                    <input type="radio" name="slider" id="slider1" checked>
+                    <input type="radio" name="slider" id="slider2">
+                    <input type="radio" name="slider" id="slider3">
+
                     <img src="./assets/img/atmosphere-img-1.jpg" alt="" class="atmosphere__img">
                     <img src="./assets/img/atmosphere-img-2.jpg" alt="" class="atmosphere__img">
                     <img src="./assets/img/atmosphere-img-3.jpg" alt="" class="atmosphere__img">
+
                 </div>
                 <div class="atmosphere__indicators">
-                    <span class="atmosphere__dot"></span>
-                    <span class="atmosphere__dot atmosphere__dot--active"></span>
-                    <span class="atmosphere__dot"></span>
+                    <label for="slider1" class="atmosphere__dot"></label>
+                    <label for="slider2" class="atmosphere__dot atmosphere__dot--active"></label>
+                    <label for="slider3" class="atmosphere__dot"></label>
                 </div>
             </div>
         </section>
@@ -715,6 +713,7 @@
                 animateClass: 'animate__animated', // default
             }
         ).init();
+
     </script>
     <!-- AOS -->
     <!-- <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
