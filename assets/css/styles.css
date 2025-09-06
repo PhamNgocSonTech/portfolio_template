@@ -51,7 +51,6 @@ a {
   height: 62px;
   background: var(--primary-color);
   cursor: pointer;
-  /* pointer-events: auto; */
   transition: all 0.4s ease;
 }
 
@@ -537,9 +536,11 @@ a {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.67; /* 166.667% */
+  text-decoration: underline;
 }
 .project__card-link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .project__card-img img {
@@ -855,7 +856,10 @@ a {
 }
 
 .faq__item {
+  position: relative;
   border-bottom: 2px solid #08182f;
+  /* padding-right: 60px;  */
+  padding: 24px 0;
 }
 
 /* change color border faq item */
@@ -873,10 +877,8 @@ a {
 }
 
 .faq__question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
+  display: inline-block;
+  /* padding: 24px 0 12px; */
 }
 
 .faq__question-text {
@@ -887,28 +889,30 @@ a {
   font-weight: 500;
   line-height: 1.25; /* 125% */
   letter-spacing: -1.28px;
-  margin: 20px 0; /* khoảng cách khi đóng */
+  margin: 20px 0;
   transition: margin 0.28s ease; /* mượt khi thay đổi */
 }
 
 .faq__button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  /* flex: 0 0 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 50px;
-  position: relative;
   width: 50px;
   height: 50px;
   border: 2px solid rgba(22, 26, 28, 0.2);
   border-radius: 50%;
-  cursor: pointer;
   background: transparent;
 }
 
-.faq__icon-plus,
+/* .faq__icon-plus,
 .faq__icon-minus {
   display: inline-block;
-}
+} */
 
 .faq__icon-minus {
   display: none;
@@ -918,7 +922,7 @@ a {
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  margin: 0;
+  margin-top: 0;
   transition: margin 0.32s ease;
 }
 
@@ -928,7 +932,6 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
-  /* margin: 23px 0 21px; */
 }
 
 /* open button plus */
@@ -936,25 +939,17 @@ a {
   border-color: rgba(93, 59, 238, 0.2);
 }
 
-.faq__item input:checked ~ .faq__question .faq__icon-plus {
+.faq__item input:checked ~ .faq__button .faq__icon-plus {
   display: none;
 }
 
-.faq__item input:checked ~ .faq__question .faq__icon-minus {
+.faq__item input:checked ~ .faq__button .faq__icon-minus {
   display: block;
 }
 
-/* .faq__item input:checked ~ .faq__answer {
-  max-height: 1000px;
-  margin: 23px 0 21px;
-} */
-
 .faq__item input:checked ~ .faq__answer {
   max-height: 1000px;
-  margin: 24px 0 12px;
-}
-.faq__item input:checked ~ .faq__question .faq__question-text {
-  margin: 20px 0 8px; /* khi mở thì chỉ cách nhẹ với answer */
+  margin-top: 12px;
 }
 
 /* =============================ATMOSPHERE============================= */
@@ -1127,6 +1122,11 @@ a {
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
   opacity: 0.6;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
 }
 
 .footer__separator {
